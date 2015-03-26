@@ -1,5 +1,91 @@
-body, p, h1 {
+* {
   margin: 0;
   padding: 0;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
+
+.story {
+  float: left;
+  background: black;
+  position: relative;
+  padding: 1% 2% 0% 2%;
+}
+
+.story:hover {
+  background: black;
+  opacity: 0.9;
+}
+
+.big {
+  width: 29.6%;
+  height: 100%;
+}
+
+.little {
+  width: 29%;
+  height: 50%;
+  margin: .2% 0% 0 .2%;
+}
+
+.top_story_container {
+  background: #33CCFF;
+  overflow: auto;
+  opacity: 0.8;
+  height: 500px;
+}
+
+
+.article_type {
+  float: left;
+  text-transform: uppercase;
+}
+
+.article_type a {
+  color: red;
+  font-weight: bold;
+}
+
+.article_type a:hover {
+  color: white;
+}
+
+.comments_link {
+  float: right;
+}
+
+.comments_link a:hover {
+  color: red;
+}
+
+.article_title a {
+  position: absolute;
+  bottom: 12%;
+  font-size: 1.5em;
+}
+
+.article_title a:hover {
+  color: red;
+}
+
+a {
+  font-size: .8em;
+  display: block;
+  text-decoration: none;
+}
+
+
+
+/*
+Things to remember from CSS talk from Emily:
+
+- Padding and Margin MUST be accounted for in percentage based width estimates, because they will make your box bigger;
+
+- Borders CANNOT be perecentage based, but they WILL make your box bigger.
+
+- Box positions should, in-general ALL be floated left.
+
+- Backgrounds of a box will show through padding, but not margins. Backgrounds of the box CONTAINING this box will show through margins.
+
+*/
